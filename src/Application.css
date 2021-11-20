@@ -1,0 +1,15 @@
+.Application{
+    text-align: center;
+    margin : 0 22em;
+    background-color : #315399 ;
+    color : white;
+}
+#locations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#enviroments{
+    display: flex;
+    justify-content: space-between;
+}

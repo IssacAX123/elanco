@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import baseURL from "./BaseURL";
+import './Application.css';
 
 function Application({name}) {
     let developmentConsumedAvg = 0;
@@ -53,26 +54,30 @@ function Application({name}) {
                 <div className="enviroment" id="productionEnviroment">
                     <h2>Production</h2>
                     <div className="EnviromentDetails">
-                        <p>Consumed Quantity Avg = {productionConsumedAvg}</p>
-                        <p>Cost Avg = {productionCostAvg}</p>
+                        <p>Consumed Avg = {productionConsumedAvg.toFixed(1)}</p>
+                        <p>Cost Avg = {productionCostAvg.toFixed(5)}</p>
                     </div>
                 </div>
                 <div className="enviroment" id="testEnviroment">
                     <h2>Test</h2>
                     <div className="EnviromentDetails">
-                        <p>Consumed Quantity Avg = {testConsumedAvg}</p>
-                        <p>Cost Avg = {testCostAvg}</p>
+                        <p>Consumed Avg = {testConsumedAvg.toFixed(1)}</p>
+                        <p>Cost Avg = {testCostAvg.toFixed(5)}</p>
                     </div>
                 </div>
                 <div className="enviroment" id="developmentEnviroment">
                     <h2>Development</h2>
                     <div className="EnviromentDetails">
-                        <p>Consumed Quantity Avg = {developmentConsumedAvg}</p>
-                        <p>Cost Avg = {developmentCostAvg}</p>
+                        <p>Consumed Avg = {developmentConsumedAvg.toFixed(1)}</p>
+                        <p>Cost Avg = {developmentCostAvg.toFixed(5)}</p>
                     </div>
                 </div>
-                <p>locations= {Array.from(locations).join(' ')}</p>
             </div>
+            <div id="locations">
+                <h2>locations:  &nbsp; &nbsp;</h2>
+                <p>{Array.from(locations).join(' ')}</p>
+            </div>
+
         </div>
     );
 }
