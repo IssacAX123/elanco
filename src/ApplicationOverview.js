@@ -13,12 +13,14 @@ function ApplicationOverview({name}) {
     let productionCostAvg = 0;
     let productionCount = 0;
     let locations = new Set();
+    let resources = new Set();
     const [json, setJson] = useState([])
     useEffect(() =>{
         fetch(`${baseURL}/applications/${name}`).then(response =>{return response.json();}).then(data =>{setJson(data)})
     })
 
     for(let i = 0; i < json.length; i++){
+        locations.add(json[i]["ResourceLocation"])
         locations.add(json[i]["ResourceLocation"])
         if(json[i]["Tags"]["environment"] === "Development"){
             developmentCount++;
