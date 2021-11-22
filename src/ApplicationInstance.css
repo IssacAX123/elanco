@@ -3,24 +3,31 @@
     margin: 0 22em;
     background-color: #315399;
     color: white;
-    border: 1px red solid;
 }
 #locations{
+    height: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #date{
+    height: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #resource{
+    height: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .EnviromentDetails{
+    height: 2.2em;
     display: flex;
     justify-content: space-around;
+}
+
+.ApplicationInstance > h2{
+    height: 1em;
 }
