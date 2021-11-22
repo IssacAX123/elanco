@@ -9,13 +9,14 @@ import {useEffect, useState} from "react/cjs/react.production.min";
 function App() {
     let json =[]
     fetch(`${baseURL}/applications/`).then(response =>{return response.json();}).then(data =>{json=data})
+    console.log("hello there", json)
     return (
       <Router>
         <div className="App">
           <header className="App-header">
               <Routes>
                   <Route path="/" exact element={<ApplicationsList/>}/>
-                  {json.map(item => <Route path={"/" + item} exact element={<ApplicationsList name={item}/>}/>)}
+                  {json.map(item => <Route path={"/" + item} exact element={<ApplicationPage name={item}/>}/>)}
               </Routes>
           </header>
         </div>

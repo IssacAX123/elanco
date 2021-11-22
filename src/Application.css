@@ -1,6 +1,6 @@
 .Application{
     text-align: center;
-    margin : 0 22em;
+    margin : 0 5em;
     background-color : #315399 ;
     color : white;
 }
@@ -8,9 +8,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 #enviroments{
     display: flex;
     justify-content: space-between;
-    height: auto;
+    margin: -1.5em 2em;
+
 }

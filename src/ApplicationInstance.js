@@ -7,19 +7,19 @@ function ApplicationInstance({jsoni}) {
         <div className="ApplicationInstance">
             <h1>{jsoni['InstanceId']}</h1>
             <h2>{jsoni['Tags']['environment']}</h2>
-            <div className="EnviromentDetails">
+            <div className="instanceEnviromentDetails">
                 <p>Consumed Avg = {parseInt(jsoni['ConsumedQuantity']).toFixed(1)}</p>
                 <p>Cost Avg = {parseInt(jsoni['Cost']).toFixed(5)}</p>
             </div>
-            <div id="locations">
+            <div id="linstanceLocations">
                 <h2>locations:  &nbsp; &nbsp;</h2>
                 <p>{jsoni['Location']}</p>
             </div>
-            <div id="resource">
+            <div id="instanceResource">
                 <h2>resource:  &nbsp; &nbsp;</h2>
                 <p>{jsoni['MeterCategory']}</p>
             </div>
-            <div id="date">
+            <div id="instanceDate">
                 <h2>date:  &nbsp; &nbsp;</h2>
                 <p>{jsoni['Date']}</p>
             </div>
