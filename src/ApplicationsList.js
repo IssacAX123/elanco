@@ -1,7 +1,7 @@
 import React from 'react';
 import baseURL from "./BaseURL";
 import {useEffect, useState} from "react";
-import Application from "./Application";
+import ApplicationOverview from "./ApplicationOverview";
 
 function ApplicationsList(props) {
     const [json, setJson] = useState([])
@@ -11,7 +11,7 @@ function ApplicationsList(props) {
 
     return (
         <div>
-            {json.map(item => <Application name={item}/>)}
+            {json.map(item => <ApplicationOverview name={item}/>)}
         </div>
     );
 }

@@ -1,12 +1,13 @@
 import './App.css';
-import Application from "./Application";
+import ApplicationOverview from "./ApplicationOverview";
 import ApplicationsList from "./ApplicationsList";
+import ApplicationPage from "./ApplicationPage";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ApplicationsList/>
+        <ApplicationPage name={"1080p-Lock"}/>
       </header>
     </div>
   );

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import baseURL from "./BaseURL";
 import './Application.css';
 
-function Application({name}) {
+function ApplicationOverview({name}) {
     let developmentConsumedAvg = 0;
     let developmentCostAvg = 0;
     let developmentCount = 0;
@@ -82,4 +82,4 @@ function Application({name}) {
     );
 }
 
-export default Application;
+export default ApplicationOverview;

@@ -1,0 +1,26 @@
+.ApplicationInstance {
+    text-align: center;
+    margin: 0 22em;
+    background-color: #315399;
+    color: white;
+    border: 1px red solid;
+}
+#locations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#resource{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.EnviromentDetails{
+    display: flex;
+    justify-content: space-around;
+}
