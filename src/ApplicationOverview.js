@@ -21,7 +21,7 @@ function ApplicationOverview({name}) {
 
     for(let i = 0; i < json.length; i++){
         locations.add(json[i]["ResourceLocation"])
-        locations.add(json[i]["ResourceLocation"])
+        resources.add(json[i]["MeterCategory"])
         if(json[i]["Tags"]["environment"] === "Development"){
             developmentCount++;
             developmentConsumedAvg += parseInt(json[i]["ConsumedQuantity"], 10)
@@ -75,9 +75,13 @@ function ApplicationOverview({name}) {
                     </div>
                 </div>
             </div>
+            <div id="resources">
+                <h2>resources:  &nbsp; &nbsp;</h2>
+                <p>{Array.from(resources).join(', ')}</p>
+            </div>
             <div id="locations">
                 <h2>locations:  &nbsp; &nbsp;</h2>
-                <p>{Array.from(locations).join(' ')}</p>
+                <p>{Array.from(locations).join(', ')}</p>
             </div>
 
         </div>

@@ -12,7 +12,7 @@ function ApplicationsList(props) {
 
     return (
         <div>
-            {json.map(item => <Link to={"/"+item}><ApplicationOverview name={item}/></Link>)}
+            {json.map(item => <Link style={{ textDecoration: 'none'}} to={"/"+item}><ApplicationOverview name={item}/></Link>)}
         </div>
     );
 }
