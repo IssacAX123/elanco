@@ -1,0 +1,10 @@
+#filter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkbox{
+    display: flex;
+    margin: 0.5em;
+}

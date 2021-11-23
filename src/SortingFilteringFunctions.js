@@ -41,6 +41,8 @@ export const  highestInstanceCost = (a, b) =>{
     return (parseInt(a["Cost"]) > parseInt(b["Cost"])) ? -1 : 1
 }
 export const  highestInstanceQuantity = (a, b) =>{
+    console.log("a", a)
+    console.log("b", b)
     return (parseInt(a["ConsumedQuantity"]) > parseInt(b["ConsumedQuantity"])) ? -1 : 1
 }
 

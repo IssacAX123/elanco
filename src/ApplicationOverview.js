@@ -17,7 +17,7 @@ function ApplicationOverview({name}) {
     const [json, setJson] = useState([])
     useEffect(() =>{
         fetch(`${baseURL}/applications/${name}`).then(response =>{return response.json();}).then(data =>{setJson(data)})
-    })
+    }, [])
 
     for(let i = 0; i < json.length; i++){
         locations.add(json[i]["ResourceLocation"])
@@ -47,7 +47,6 @@ function ApplicationOverview({name}) {
 
 
     let output = JSON.stringify(json)
-    console.log("output", output)
 
     return (
         <div className="Application">
